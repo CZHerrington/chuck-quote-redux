@@ -16,10 +16,14 @@
         <form class="form" id="chuckQuotesForm" action="#">
             <div id="selectWrapper" class="field-wrapper">
             </div>
-            <button type="submit" class="button is-primary is-medium is-outline" id="getMoreQuotes">What else does Chuck say?</button>
+            <button type="submit" class="button is-loading is-primary is-medium is-outline" id="getMoreQuotes">What else does Chuck say?</button>
         </form>
-        
-        <p id="chuckSays" class="quote">&nbsp;</p>
+    </div>
+    <div id="wrapperModal" class="wrapper--modal">
+        <div class="modal">
+            <span class="modal__close">x</span>
+            <p id="chuckSays" class="quote">&nbsp;</p>
+        </div>
     </div>
     <script src="./scripts/get.js"></script>
     <script src="./scripts/main.js"></script>

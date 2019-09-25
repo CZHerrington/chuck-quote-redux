@@ -56,7 +56,57 @@ h5 {
 }
 
 .quote {
-    font-size: 1.6rem;
-    margin: 1rem 0 2rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
 
+.wrapper--modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.wrapper--modal .modal {
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    background-color: #FFF;
+    max-height: 200px;
+    max-width: 640px;
+    overflow-y: scroll;
+    padding: 16px 32px;
+}
+
+.wrapper--modal.open {
+    display: flex;
+}
+
+.modal__close {
+    transition: all .5s;
+    background-color: #000;
+    color: rgb(219, 219, 219);
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    height: 22px;
+    line-height: 1;
+    font-size: 16px;
+    width: 23px;
+    top: 0;
+    right: 0;
+}
+
+.modal__close:hover {
+    transition: all .5s;
+    color: rgb(246, 111, 111);
+    background-color: rgb(27, 27, 27);
 }
